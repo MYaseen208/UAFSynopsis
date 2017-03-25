@@ -1,0 +1,15 @@
+[0] Config.pm:354> INFO - This is Biber 2.6
+[0] Config.pm:357> INFO - Logfile is 'MPhilSynopsis.blg'
+[95] biber:302> INFO - === Sat Mar 25, 2017, 14:18:36
+[148] Biber.pm:359> INFO - Reading 'MPhilSynopsis.bcf'
+[316] Biber.pm:823> INFO - Found 23 citekeys in bib section 0
+[342] Biber.pm:3658> INFO - Processing section 0
+[384] Biber.pm:3828> INFO - Looking for bibtex format file 'SynopsisMain/07Bibliography/Bibliography.bib' for section 0
+[388] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[392] bibtex.pm:1282> INFO - Found BibTeX data source 'SynopsisMain/07Bibliography/Bibliography.bib'
+[654] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[655] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[655] Biber.pm:3487> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[655] Biber.pm:3493> INFO - No sort tailoring available for locale 'en-US'
+[731] bbl.pm:597> INFO - Writing 'MPhilSynopsis.bbl' with encoding 'UTF-8'
+[744] bbl.pm:701> INFO - Output to MPhilSynopsis.bbl
