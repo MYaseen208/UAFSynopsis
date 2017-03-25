@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.4)  25 MAR 2017 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.4)  25 MAR 2017 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1160,52 +1160,48 @@ LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 59.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 59.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 69.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 79.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 70.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 80.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 72.
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 79.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 82.
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 89.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
-(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 107.
-
-Overfull \vbox (1.51804pt too high) detected at line 130
- []
-
-[1
+(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 117.
+ [1
 
 ] [2]
 Chapter 2.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 135.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 145.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 (./UAFSynopsisDoc.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
  [3
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./UAFSynopsisDoc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `UAFSynopsisDoc.out' has not changed.
-(rerunfilecheck)             Checksum: A6F37ED810741A46D1E4EC9C39C5A9E4;458.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
+(rerunfilecheck)             Checksum: B0BD713B574B41B9CE23460C48D5A8B5;572.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 13692 strings out of 493014
- 188059 string characters out of 6135690
- 395688 words of memory out of 5000000
- 16898 multiletter control sequences out of 15000+600000
+ 13696 strings out of 493014
+ 188115 string characters out of 6135690
+ 384534 words of memory out of 5000000
+ 16901 multiletter control sequences out of 15000+600000
  55912 words of font info for 75 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  37i,11n,45p,752b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1220,10 +1216,10 @@ xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on UAFSynopsisDoc.pdf (7 pages, 113135 bytes).
+Output written on UAFSynopsisDoc.pdf (7 pages, 114278 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 117 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -80,7 +80,7 @@
       <file>MPhilSynopsis.bcf</file>
     </requires>
     <requires type="editable">
-      <file>SynopsisMain/07Bibliography/Bibliography.bib</file>
+      <file>SynopsisMain/Bibliography.bib</file>
     </requires>
   </external>
 </requests>
