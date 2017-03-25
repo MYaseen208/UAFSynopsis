@@ -1,0 +1,36 @@
+\section{Materials and Methods}
+
+\subsection{Data Source:}
+Maize crop data of different locations will be taken from Observatory of Crop Physiology, Department of University of Agriculture Faisalabad and Regional Meteorological Center Lahore.
+\subsection{A crop model is a dynamic system model}
+The general form of a dynamic systems model \citep{BrunWallachMakowskiEtAl2006} in discrete time is
+\begin{eqnarray}
+U_s (t+\Delta t)=U_s (t)+g_s [U(t),X(t);\theta] 
+\end{eqnarray}
+ Here $t$  is the time,  $\Delta$$t$  is some time increment, $U(t)=[U_1 (t),...,U_s (t)]^T$ is the vector of state variables at time $t$ , $X(t)$ is the vector of explanatory variables at time $t$, $\theta$  is the vector of parameters and $g$ is a function of   state variables. For crop models, $\Delta$$t$ is often one day. The state variables $U(t)$  could include for example leaf area index (leaf area unit soil area), biomass root depth, soil water content in each of several soil layers etc. The explanatory variables $X(t)$  include initial condition such as initial moisture, soil characteristics such as maximum water holding capacity, climate variables such as maximum and minimum temperature and management variables such as irrigation date and amount. 
+\subsection{Dynamic crop model for maize }
+We will be work with three state variables, temperature Sum $(TT)$, plant biomass $(B)$ and leaf area index $(LAI)$.  The equations are:
+\begin{eqnarray}
+TT(j+1)&=& TT(j)+\Delta TT(j) \\
+B(j+1)&=& B(j)+ \Delta B(j)  \\
+LAI(j+1)&=& LAI(j)+ \Delta LAI(j)\\
+\noalign{with} \nonumber \\ 
+\Delta TT(j)&=& max[\frac{T MIN (J)+T MAX(j)}{2}-T_{base}, 0] \\
+\Delta B(j) &=&
+\begin{cases}
+RUE (1-e^{-k. LAI(j)})\text{I}(j) & \text{if }  TT(j)\leq TT_M  \\         
+0  & \text{if }  TT(j)\ > TT_M  \\
+\end{cases}\\
+\Delta LAI(j) &=&
+\begin{cases}
+\alpha \Delta TT(j)LAI(j) max[LAI_{max}-LAI(j),0] & \text{if }  TT(j)\leq TT_L  \\
+ 0  & \text{if }  TT(j)\ > TT_L \\
+\end{cases}
+\end{eqnarray}
+   
+  
+ The index $j$ is the day. The model has a time step $\Delta t$ of one day. The exploratory variables are $TMIN(j)$, $TMAX(j)$ and  $I(j)$ which are respectively minimum and maximum temperature and solar radiation on the day. The parameters are $T_{base}$ that is the base line temperature for growth,  $RUE$  that is the radiation use efficiency, $k$ is excitation coefficient which determines the relation between leaf area index and intercepted radiation, $\alpha$ is the relative rate of leaf area index increase for small values, $LAI_{max}$ maximum leaf index,  $TT_M$ is the temperature sum for crop maturity and  $TT_L$ is the temperature sum at the end of leaf area increase, evaluate the capability of maize growth in different locations and also analysis the effect of nitrogen and cultivars  with the help of dynamic crop model.
+ \subsection{Forecast Accuracy of Dynamic model } 
+ Standard descriptive measures of goodness-of-fit will be used to evaluate predictability or accuracy  of Dynamic models \citep{HansenIndeje2004}. Mean-Absoulte error, Mean-squared error of prediction and prediction variance will be used . 
+
+
