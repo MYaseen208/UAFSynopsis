@@ -2,40 +2,36 @@
 
 \bibliography{SynopsisMain/Bibliography}
 
-
 \begin{document}
+	\renewcommand{\abstractname}{\Large\bfseries\scshape Abstract}
 
+	\phantomsection
+	\addcontentsline{toc}{section}{Abstract}
 
-\renewcommand{\abstractname}{\Large\bfseries\scshape Abstract}
+	\input{SynopsisMain/01Abstract}
+	\newpage
 
-\phantomsection
-\addcontentsline{toc}{section}{Abstract}
+	\input{SynopsisMain/02Signature}
 
-\input{SynopsisMain/01Abstract}
-\newpage
+	\input{SynopsisMain/03Introduction}
+	\input{SynopsisMain/04LiteratureReview}
+	\input{SynopsisMain/05MaterialMethod}
 
-\input{SynopsisMain/02Signature}
+	\cleardoublepage
+	\phantomsection
+	\addcontentsline{toc}{section}{References}
 
-\input{SynopsisMain/03Introduction}
-\input{SynopsisMain/04LiteratureReview}
-\input{SynopsisMain/05MaterialMethod}
+	\renewcommand*{\bibfont}{\normalsize}
+	\begingroup
+		\setstretch{1.0}
+		\setlength
+		\bibitemsep{10pt}
+		\printbibliography
+	\endgroup
 
-\cleardoublepage
-\phantomsection
-\addcontentsline{toc}{section}{References}
-
-\renewcommand*{\bibfont}{\normalsize}
-\begingroup
-\setstretch{1.0}
-\setlength
-\bibitemsep{10pt}
-\printbibliography
-\endgroup
-
-
-\cleardoublepage
-\phantomsection
-\addcontentsline{toc}{section}{Signatures}
-\input{SynopsisMain/06BackSignature}
+	\cleardoublepage
+	\phantomsection
+	\addcontentsline{toc}{section}{Signatures}
+	\input{SynopsisMain/06BackSignature}
 
 \end{document}
