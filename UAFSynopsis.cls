@@ -1,3 +1,4 @@
+% Don't make any changes in this document.
 \LoadClass[a4paper,12pt, oneside, english]{article}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{UAFSynopsis}[2017/03/25 UAFSynopsis Template]
@@ -23,6 +24,7 @@
 , titling %
 , fancyhdr %
 , titlesec %
+, tocloft %
  }
  
 \geometry{         % 
