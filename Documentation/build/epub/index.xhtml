@@ -25,7 +25,7 @@
 <h1><cite>LaTeX</cite> Package for UAF Synopsis</h1>
 <div class="section" id="introduction">
 <h2>Introduction</h2>
-<p>The [University of Agriculture, Faisalabad-Pakistan](<a class="reference external" href="https://uaf.edu.pk">https://uaf.edu.pk</a>).</p>
+<p>The <a class="reference external" href="https://uaf.edu.pk">University of Agriculture, Faisalabad-Pakistan</a><span class="link-target"> [https://uaf.edu.pk]</span>.</p>
 </div>
 <div class="section" id="installation">
 <h2>Installation</h2>
@@ -39,41 +39,37 @@ present author instructions and style guidelines (emisa.pdf).</p>
 
 \<span class="n">bibliography</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="n">Bibliography</span><span class="p">}</span>
 
-
 \<span class="n">begin</span><span class="p">{</span><span class="n">document</span><span class="p">}</span>
+	\<span class="n">renewcommand</span><span class="p">{</span>\<span class="n">abstractname</span><span class="p">}{</span>\<span class="n">Large</span>\<span class="n">bfseries</span>\<span class="n">scshape</span> <span class="n">Abstract</span><span class="p">}</span>
 
+	\<span class="n">phantomsection</span>
+	\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">Abstract</span><span class="p">}</span>
 
-\<span class="n">renewcommand</span><span class="p">{</span>\<span class="n">abstractname</span><span class="p">}{</span>\<span class="n">Large</span>\<span class="n">bfseries</span>\<span class="n">scshape</span> <span class="n">Abstract</span><span class="p">}</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">01</span><span class="n">Abstract</span><span class="p">}</span>
+	\<span class="n">newpage</span>
 
-\<span class="n">phantomsection</span>
-\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">Abstract</span><span class="p">}</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">02</span><span class="n">Signature</span><span class="p">}</span>
 
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">01</span><span class="n">Abstract</span><span class="p">}</span>
-\<span class="n">newpage</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">03</span><span class="n">Introduction</span><span class="p">}</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">04</span><span class="n">LiteratureReview</span><span class="p">}</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">05</span><span class="n">MaterialMethod</span><span class="p">}</span>
 
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">02</span><span class="n">Signature</span><span class="p">}</span>
+	\<span class="n">cleardoublepage</span>
+	\<span class="n">phantomsection</span>
+	\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">References</span><span class="p">}</span>
 
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">03</span><span class="n">Introduction</span><span class="p">}</span>
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">04</span><span class="n">LiteratureReview</span><span class="p">}</span>
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">05</span><span class="n">MaterialMethod</span><span class="p">}</span>
+	\<span class="n">renewcommand</span><span class="o">*</span><span class="p">{</span>\<span class="n">bibfont</span><span class="p">}{</span>\<span class="n">normalsize</span><span class="p">}</span>
+	\<span class="n">begingroup</span>
+		\<span class="n">setstretch</span><span class="p">{</span><span class="mf">1.0</span><span class="p">}</span>
+		\<span class="n">setlength</span>
+		\<span class="n">bibitemsep</span><span class="p">{</span><span class="mi">10</span><span class="n">pt</span><span class="p">}</span>
+		\<span class="n">printbibliography</span>
+	\<span class="n">endgroup</span>
 
-\<span class="n">cleardoublepage</span>
-\<span class="n">phantomsection</span>
-\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">References</span><span class="p">}</span>
-
-\<span class="n">renewcommand</span><span class="o">*</span><span class="p">{</span>\<span class="n">bibfont</span><span class="p">}{</span>\<span class="n">normalsize</span><span class="p">}</span>
-\<span class="n">begingroup</span>
-\<span class="n">setstretch</span><span class="p">{</span><span class="mf">1.0</span><span class="p">}</span>
-\<span class="n">setlength</span>
-\<span class="n">bibitemsep</span><span class="p">{</span><span class="mi">10</span><span class="n">pt</span><span class="p">}</span>
-\<span class="n">printbibliography</span>
-\<span class="n">endgroup</span>
-
-
-\<span class="n">cleardoublepage</span>
-\<span class="n">phantomsection</span>
-\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">Signatures</span><span class="p">}</span>
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">06</span><span class="n">BackSignature</span><span class="p">}</span>
+	\<span class="n">cleardoublepage</span>
+	\<span class="n">phantomsection</span>
+	\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">Signatures</span><span class="p">}</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">06</span><span class="n">BackSignature</span><span class="p">}</span>
 
 \<span class="n">end</span><span class="p">{</span><span class="n">document</span><span class="p">}</span>
 </pre></div>

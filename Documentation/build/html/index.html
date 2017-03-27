@@ -61,47 +61,43 @@
 <p>The UAFSynopsis <cite>LaTeX</cite> package consists of the document class UAFSynopsis.cls, the biblatex bibliography style emisa.bbx and the biblatex citation style emisa.cbx.</p>
 <p>The package also includes a quick-start template for users (MPhilSysnopsis.tex) and the
 present author instructions and style guidelines (emisa.pdf).</p>
-<div class="section" id="python-code-for-gui-calculator">
-<h3>Python Code for GUI Calculator<a class="headerlink" href="#python-code-for-gui-calculator" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="uafsynopsis">
+<h3>UAFSynopsis<a class="headerlink" href="#uafsynopsis" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default"><div class="highlight"><pre><span></span>\<span class="n">documentclass</span><span class="p">{</span><span class="n">UAFSynopsis</span><span class="p">}</span>
 
-\<span class="n">bibliography</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="n">Bibliography</span><span class="p">}</span>
-
+\<span class="n">bibliography</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="n">SynopsisBib</span><span class="o">.</span><span class="n">bib</span><span class="p">}</span>
 
 \<span class="n">begin</span><span class="p">{</span><span class="n">document</span><span class="p">}</span>
+	\<span class="n">renewcommand</span><span class="p">{</span>\<span class="n">abstractname</span><span class="p">}{</span>\<span class="n">Large</span>\<span class="n">bfseries</span>\<span class="n">scshape</span> <span class="n">Abstract</span><span class="p">}</span>
 
+	\<span class="n">phantomsection</span>
+	\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">Abstract</span><span class="p">}</span>
 
-\<span class="n">renewcommand</span><span class="p">{</span>\<span class="n">abstractname</span><span class="p">}{</span>\<span class="n">Large</span>\<span class="n">bfseries</span>\<span class="n">scshape</span> <span class="n">Abstract</span><span class="p">}</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">01</span><span class="n">Abstract</span><span class="p">}</span>
+	\<span class="n">newpage</span>
 
-\<span class="n">phantomsection</span>
-\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">Abstract</span><span class="p">}</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">02</span><span class="n">Signature</span><span class="p">}</span>
 
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">01</span><span class="n">Abstract</span><span class="p">}</span>
-\<span class="n">newpage</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">03</span><span class="n">Introduction</span><span class="p">}</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">04</span><span class="n">LiteratureReview</span><span class="p">}</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">05</span><span class="n">MaterialMethod</span><span class="p">}</span>
 
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">02</span><span class="n">Signature</span><span class="p">}</span>
+	\<span class="n">cleardoublepage</span>
+	\<span class="n">phantomsection</span>
+	\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">References</span><span class="p">}</span>
 
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">03</span><span class="n">Introduction</span><span class="p">}</span>
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">04</span><span class="n">LiteratureReview</span><span class="p">}</span>
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">05</span><span class="n">MaterialMethod</span><span class="p">}</span>
+	\<span class="n">renewcommand</span><span class="o">*</span><span class="p">{</span>\<span class="n">bibfont</span><span class="p">}{</span>\<span class="n">normalsize</span><span class="p">}</span>
+	\<span class="n">begingroup</span>
+		\<span class="n">setstretch</span><span class="p">{</span><span class="mf">1.0</span><span class="p">}</span>
+		\<span class="n">setlength</span>
+		\<span class="n">bibitemsep</span><span class="p">{</span><span class="mi">10</span><span class="n">pt</span><span class="p">}</span>
+		\<span class="n">printbibliography</span>
+	\<span class="n">endgroup</span>
 
-\<span class="n">cleardoublepage</span>
-\<span class="n">phantomsection</span>
-\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">References</span><span class="p">}</span>
-
-\<span class="n">renewcommand</span><span class="o">*</span><span class="p">{</span>\<span class="n">bibfont</span><span class="p">}{</span>\<span class="n">normalsize</span><span class="p">}</span>
-\<span class="n">begingroup</span>
-\<span class="n">setstretch</span><span class="p">{</span><span class="mf">1.0</span><span class="p">}</span>
-\<span class="n">setlength</span>
-\<span class="n">bibitemsep</span><span class="p">{</span><span class="mi">10</span><span class="n">pt</span><span class="p">}</span>
-\<span class="n">printbibliography</span>
-\<span class="n">endgroup</span>
-
-
-\<span class="n">cleardoublepage</span>
-\<span class="n">phantomsection</span>
-\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">Signatures</span><span class="p">}</span>
-\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">06</span><span class="n">BackSignature</span><span class="p">}</span>
+	\<span class="n">cleardoublepage</span>
+	\<span class="n">phantomsection</span>
+	\<span class="n">addcontentsline</span><span class="p">{</span><span class="n">toc</span><span class="p">}{</span><span class="n">section</span><span class="p">}{</span><span class="n">Signatures</span><span class="p">}</span>
+	\<span class="nb">input</span><span class="p">{</span><span class="n">SynopsisMain</span><span class="o">/</span><span class="mi">06</span><span class="n">BackSignature</span><span class="p">}</span>
 
 \<span class="n">end</span><span class="p">{</span><span class="n">document</span><span class="p">}</span>
 </pre></div>
@@ -130,7 +126,7 @@ present author instructions and style guidelines (emisa.pdf).</p>
 <li><a class="reference internal" href="#latex-package-for-uaf-synopsis"><cite>LaTeX</cite> Package for UAF Synopsis</a><ul>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#installation">Installation</a><ul>
-<li><a class="reference internal" href="#python-code-for-gui-calculator">Python Code for GUI Calculator</a></li>
+<li><a class="reference internal" href="#uafsynopsis">UAFSynopsis</a></li>
 </ul>
 </li>
 </ul>

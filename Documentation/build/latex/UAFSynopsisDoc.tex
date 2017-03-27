@@ -41,7 +41,7 @@
 
 
 \title{UAFSynopsis Documentation}
-\date{Mar 25, 2017}
+\date{Mar 27, 2017}
 \release{1.0}
 \author{Muhammad Yaseen\\Muhammad Usman}
 \newcommand{\sphinxlogo}{}
@@ -57,11 +57,11 @@
 
 
 \chapter{\sphinxtitleref{LaTeX} Package for UAF Synopsis}
-\label{\detokenize{index:latex-package-for-uaf-synopsis}}\label{\detokenize{index:uafsynopsis-s-documentation}}
+\label{\detokenize{index:uafsynopsis-s-documentation}}\label{\detokenize{index:latex-package-for-uaf-synopsis}}
 
 \section{Introduction}
 \label{\detokenize{index:introduction}}
-The \sphinxtitleref{hyperref{[}https://uaf.edu.pk{]}\{University of Agriculture, Faisalabad-Pakistan\}}.
+The \href{https://uaf.edu.pk}{University of Agriculture, Faisalabad-Pakistan}.
 
 
 \section{Installation}
@@ -74,48 +74,44 @@ The package also includes a quick-start template for users (MPhilSysnopsis.tex) 
 present author instructions and style guidelines (emisa.pdf).
 
 
-\subsection{Python Code for GUI Calculator}
-\label{\detokenize{index:python-code-for-gui-calculator}}
+\subsection{UAFSynopsis}
+\label{\detokenize{index:uafsynopsis}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYGZbs{}\PYG{n}{documentclass}\PYG{p}{\PYGZob{}}\PYG{n}{UAFSynopsis}\PYG{p}{\PYGZcb{}}
 
-\PYGZbs{}\PYG{n}{bibliography}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{n}{Bibliography}\PYG{p}{\PYGZcb{}}
-
+\PYGZbs{}\PYG{n}{bibliography}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{n}{SynopsisBib}\PYG{o}{.}\PYG{n}{bib}\PYG{p}{\PYGZcb{}}
 
 \PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{document}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n}{renewcommand}\PYG{p}{\PYGZob{}}\PYGZbs{}\PYG{n}{abstractname}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYGZbs{}\PYG{n}{Large}\PYGZbs{}\PYG{n}{bfseries}\PYGZbs{}\PYG{n}{scshape} \PYG{n}{Abstract}\PYG{p}{\PYGZcb{}}
 
+	\PYGZbs{}\PYG{n}{phantomsection}
+	\PYGZbs{}\PYG{n}{addcontentsline}\PYG{p}{\PYGZob{}}\PYG{n}{toc}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{section}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{Abstract}\PYG{p}{\PYGZcb{}}
 
-\PYGZbs{}\PYG{n}{renewcommand}\PYG{p}{\PYGZob{}}\PYGZbs{}\PYG{n}{abstractname}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYGZbs{}\PYG{n}{Large}\PYGZbs{}\PYG{n}{bfseries}\PYGZbs{}\PYG{n}{scshape} \PYG{n}{Abstract}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{01}\PYG{n}{Abstract}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n}{newpage}
 
-\PYGZbs{}\PYG{n}{phantomsection}
-\PYGZbs{}\PYG{n}{addcontentsline}\PYG{p}{\PYGZob{}}\PYG{n}{toc}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{section}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{Abstract}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{02}\PYG{n}{Signature}\PYG{p}{\PYGZcb{}}
 
-\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{01}\PYG{n}{Abstract}\PYG{p}{\PYGZcb{}}
-\PYGZbs{}\PYG{n}{newpage}
+	\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{03}\PYG{n}{Introduction}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{04}\PYG{n}{LiteratureReview}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{05}\PYG{n}{MaterialMethod}\PYG{p}{\PYGZcb{}}
 
-\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{02}\PYG{n}{Signature}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n}{cleardoublepage}
+	\PYGZbs{}\PYG{n}{phantomsection}
+	\PYGZbs{}\PYG{n}{addcontentsline}\PYG{p}{\PYGZob{}}\PYG{n}{toc}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{section}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{References}\PYG{p}{\PYGZcb{}}
 
-\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{03}\PYG{n}{Introduction}\PYG{p}{\PYGZcb{}}
-\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{04}\PYG{n}{LiteratureReview}\PYG{p}{\PYGZcb{}}
-\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{05}\PYG{n}{MaterialMethod}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n}{renewcommand}\PYG{o}{*}\PYG{p}{\PYGZob{}}\PYGZbs{}\PYG{n}{bibfont}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYGZbs{}\PYG{n}{normalsize}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n}{begingroup}
+		\PYGZbs{}\PYG{n}{setstretch}\PYG{p}{\PYGZob{}}\PYG{l+m+mf}{1.0}\PYG{p}{\PYGZcb{}}
+		\PYGZbs{}\PYG{n}{setlength}
+		\PYGZbs{}\PYG{n}{bibitemsep}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{10}\PYG{n}{pt}\PYG{p}{\PYGZcb{}}
+		\PYGZbs{}\PYG{n}{printbibliography}
+	\PYGZbs{}\PYG{n}{endgroup}
 
-\PYGZbs{}\PYG{n}{cleardoublepage}
-\PYGZbs{}\PYG{n}{phantomsection}
-\PYGZbs{}\PYG{n}{addcontentsline}\PYG{p}{\PYGZob{}}\PYG{n}{toc}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{section}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{References}\PYG{p}{\PYGZcb{}}
-
-\PYGZbs{}\PYG{n}{renewcommand}\PYG{o}{*}\PYG{p}{\PYGZob{}}\PYGZbs{}\PYG{n}{bibfont}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYGZbs{}\PYG{n}{normalsize}\PYG{p}{\PYGZcb{}}
-\PYGZbs{}\PYG{n}{begingroup}
-\PYGZbs{}\PYG{n}{setstretch}\PYG{p}{\PYGZob{}}\PYG{l+m+mf}{1.0}\PYG{p}{\PYGZcb{}}
-\PYGZbs{}\PYG{n}{setlength}
-\PYGZbs{}\PYG{n}{bibitemsep}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{10}\PYG{n}{pt}\PYG{p}{\PYGZcb{}}
-\PYGZbs{}\PYG{n}{printbibliography}
-\PYGZbs{}\PYG{n}{endgroup}
-
-
-\PYGZbs{}\PYG{n}{cleardoublepage}
-\PYGZbs{}\PYG{n}{phantomsection}
-\PYGZbs{}\PYG{n}{addcontentsline}\PYG{p}{\PYGZob{}}\PYG{n}{toc}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{section}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{Signatures}\PYG{p}{\PYGZcb{}}
-\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{06}\PYG{n}{BackSignature}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n}{cleardoublepage}
+	\PYGZbs{}\PYG{n}{phantomsection}
+	\PYGZbs{}\PYG{n}{addcontentsline}\PYG{p}{\PYGZob{}}\PYG{n}{toc}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{section}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZob{}}\PYG{n}{Signatures}\PYG{p}{\PYGZcb{}}
+	\PYGZbs{}\PYG{n+nb}{input}\PYG{p}{\PYGZob{}}\PYG{n}{SynopsisMain}\PYG{o}{/}\PYG{l+m+mi}{06}\PYG{n}{BackSignature}\PYG{p}{\PYGZcb{}}
 
 \PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{document}\PYG{p}{\PYGZcb{}}
 \end{sphinxVerbatim}

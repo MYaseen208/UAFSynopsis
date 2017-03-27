@@ -34,7 +34,7 @@ The package also includes a quick-start template for users (MPhilSysnopsis.tex) 
 present author instructions and style guidelines (emisa.pdf).
 
 
-Python Code for GUI Calculator
+UAFSynopsis
 ******************************
 
 .. literalinclude:: MPhilSynopsis.tex
