@@ -92,8 +92,8 @@
 \fancyfoot[RE,RO]{\thepage}
 \linespread{1.5}
 
-\titleformat*{\section}{\Large\bfseries\scshape}
-\titleformat*{\subsection}{\large\bfseries\scshape}
+\titleformat*{\section}{\Large\bfseries\itshape}
+\titleformat*{\subsection}{\large\bfseries\itshape}
 
 
 %%Declare bibliography in university style
